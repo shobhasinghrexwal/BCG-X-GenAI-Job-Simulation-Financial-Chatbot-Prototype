@@ -2,7 +2,7 @@
 ## Financial Chatbot Prototype
 
 ### Overview
-Under the BCG Tech Hub initiative, I developed a prototype of a financial chatbot called 'FinBot' using Python for the BCG X GenAI Job Simulation, offered via Forage. This cutting-edge tool is capable of simplifying predefined and precise information about the financial performances of three of the largest companies: Apple, Tesla, and Microsoft, over fiscal years 2021, 2022, and 2023 and assisting in user queries respectively.
+Under BCG's Tech Hub initiative, I developed a prototype of a financial chatbot called 'FinBot' using Python for the BCG X GenAI Job Simulation, offered via Forage. This cutting-edge tool is capable of simplifying predefined and precise information about the financial performances of three of the largest companies: Apple, Tesla, and Microsoft, over fiscal years 2021, 2022, and 2023 and assisting in user queries respectively.
 
 ### Features
 Any of the following sorts of financial queries are offered assistance with rule-based logic from the chatbot:
