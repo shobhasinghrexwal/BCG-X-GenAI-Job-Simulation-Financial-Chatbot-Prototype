@@ -12,23 +12,23 @@ def financial_chatbot(company_input, fiscal_year, user_query):
     try:
         if user_query == "What is the total revenue?":
             revenue = final_report[(final_report['Year'] == fiscal_year) & (final_report['Company'] == company_input)]['Total Revenue'].values[0]
-            return f"The Total Revenue for {company_input} in fiscal year {fiscal_year} is ${revenue:,.2f}."
+            return f"The Total Revenue for {company_input} in fiscal year {fiscal_year} is ${revenue:,.2f} billion."
         
         elif user_query == "What is the Net Income?":
             net_income = final_report[(final_report['Year'] == fiscal_year) & (final_report['Company'] == company_input)]['Net Income'].values[0]
-            return f"The Net Income for {company_input} in fiscal year {fiscal_year} is ${net_income:,.2f}."
+            return f"The Net Income for {company_input} in fiscal year {fiscal_year} is ${net_income:,.2f} billion."
         
         elif user_query == "What is the sum of total assets?":
             total_assets = final_report[(final_report['Year'] == fiscal_year) & (final_report['Company'] == company_input)]['Total Assets'].values[0]
-            return f"The sum of Total Assets for {company_input} in fiscal year {fiscal_year} is ${total_assets:,.2f}."
+            return f"The sum of Total Assets for {company_input} in fiscal year {fiscal_year} is ${total_assets:,.2f} billion."
         
         elif user_query == "What is the sum of total liabilities?":
             total_liabilities = final_report[(final_report['Year'] == fiscal_year) & (final_report['Company'] == company_input)]['Total Liabilities'].values[0]
-            return f"The sum of Total Liabilities for {company_input} in fiscal year {fiscal_year} is ${total_liabilities:,.2f}."
+            return f"The sum of Total Liabilities for {company_input} in fiscal year {fiscal_year} is ${total_liabilities:,.2f} billion."
         
         elif user_query == "What is cash flow from operating activities?":
             cash_ops = final_report[(final_report['Year'] == fiscal_year) & (final_report['Company'] == company_input)]['Cash Flow from Operating Activities'].values[0]
-            return f"The Cash Flow from Operating Activities for {company_input} in fiscal year {fiscal_year} is ${cash_ops:,.2f}."
+            return f"The Cash Flow from Operating Activities for {company_input} in fiscal year {fiscal_year} is ${cash_ops:,.2f} billion."
         
         elif user_query == "What is the revenue growth(%) ?":
             revenue_growth = final_report[(final_report['Year'] == fiscal_year) & (final_report['Company'] == company_input)]['Revenue Growth (%)'].values[0]
